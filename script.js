@@ -82,7 +82,7 @@ submit.addEventListener("click", function (e) {
 
         <div class="country__img">
           <img src="${
-            country__data.flags.png
+            country__data.flags.svg
           }" alt="country__flag" class="image" />
           <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1678262655311!5m2!1sen!2sus"

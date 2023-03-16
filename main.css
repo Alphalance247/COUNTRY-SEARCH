@@ -11,42 +11,6 @@ body {
   font-weight: 400;
 }
 
-/* .box {
-  display: flex;
-}
-
-.forAll {
-  display: flex;
-  flex-basis: 300px;
-}
-
-.all {
-  width: 200px;
-  line-height: 4;
-  height: 200px;
-  flex-grow: 1;
-}
-
-.update {
-  flex-grow: 1;
-}
-
-.one {
-  background-color: green;
-  margin-bottom: 1em;
-  flex-grow: 1;
-}
-.two {
-  background-color: red;
-  margin-bottom: 1em;
-  flex-grow: 1;
-}
-.three {
-  background-color: black;
-  margin-bottom: 1em;
-  flex-grow: 1;
-} */
-
 .headings {
   font-size: 150%;
   text-align: center;
@@ -193,7 +157,7 @@ hr {
   }
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 67em) {
   body {
     margin: 2rem;
   }
@@ -239,9 +203,11 @@ hr {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 40em) {
   body {
     height: 74rem;
+    background: black;
+    width: fit-content;
   }
 
   .headings {
@@ -252,17 +218,24 @@ hr {
   hr {
     color: white;
     background-color: white;
-    width: 100%;
+    width: 70%;
   }
 
   .container {
     background: goldenrod;
-    width: 27rem;
+    width: 23rem;
     height: 50rem;
+    margin: 1rem auto;
   }
 
   .form input[id*="input__form"] {
     width: 85%;
+  }
+
+  .countrydata__state {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .country__data {
@@ -273,20 +246,26 @@ hr {
   .country__img {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .country__data .image {
-    width: 27rem;
-    height: 13rem;
+    width: 23rem;
+    height: 16rem;
   }
 
   .country__data iframe {
-    width: 27rem;
-    height: 13rem;
+    width: 23rem;
+    height: 16rem;
   }
 
   .country__icon {
     text-align: center;
+  }
+
+  .countrydata__state h1 {
+    font-size: 80%;
+    line-height: 2;
+    color: black;
   }
 }
