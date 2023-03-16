@@ -83,7 +83,7 @@ body {
 }
 
 .countrydata__state {
-  height: fit-content;
+  height: 100%;
   font-style: italic;
 }
 
@@ -206,7 +206,7 @@ hr {
 
   .countrydata__state h1 {
     font-size: 1rem;
-    line-height: 2;
+    line-height: 3;
     color: black;
   }
 }
