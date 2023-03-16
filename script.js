@@ -23,6 +23,11 @@ submit.addEventListener("click", function (e) {
 
       const res = await fetch(`https://restcountries.com/v3.1/name/${input}`);
 
+      if (!res.ok)
+        throw new Error(
+          console.error(`(${res.status}), `, "message not available 🌟🌟")
+        );
+
       const data = await res.json();
 
       const [country__data] = data;
@@ -96,7 +101,13 @@ submit.addEventListener("click", function (e) {
 
       parentEl.insertAdjacentHTML("afterbegin", html);
     } catch (err) {
-      console.error(err, "country not found");
+      const markUp = `
+      <div class="error">
+          <p>opps 😪😪, Sorry country not found</p>
+      </div>
+      `;
+
+      parentEl.insertAdjacentHTML("afterbegin", markUp);
     }
   };
 
