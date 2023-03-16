@@ -3,10 +3,12 @@
 }
 
 body {
-  margin: 4em;
-  padding: 0;
+  margin: 2em;
   background: linear-gradient(to right, yellow, rgb(255, 189, 47));
-  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
 }
@@ -20,9 +22,9 @@ body {
 
 .container {
   background: goldenrod;
-  max-width: 70rem;
-  min-height: 40rem;
-  margin: 4rem auto;
+  width: 90%;
+  height: 40rem;
+  margin: auto;
   border-radius: 15px;
   box-shadow: 0 2rem 20rem 0.5rem rgba(blue, 0.2);
 }
@@ -128,7 +130,7 @@ hr {
 
 .countrydata__state :hover {
   background: yellow;
-  transition: background-color 0.9s;
+  /* transition: background-color 0.9s; */
 }
 
 /* spinner*/
@@ -205,37 +207,50 @@ hr {
 
 @media only screen and (max-width: 40em) {
   body {
-    height: 74rem;
-    background: black;
-    width: fit-content;
+    height: 80rem;
+    width: auto;
   }
 
   .headings {
-    font-size: 100%;
+    font-size: 80%;
     font-weight: bold;
   }
 
   hr {
     color: white;
     background-color: white;
-    width: 70%;
+    width: 50%;
   }
 
   .container {
     background: goldenrod;
-    width: 23rem;
+    width: 21rem;
     height: 50rem;
-    margin: 1rem auto;
+    margin: auto;
   }
 
   .form input[id*="input__form"] {
-    width: 85%;
+    width: 90%;
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 1em 1em;
+    color: blue;
+    border-color: 3px solid white;
+    border-radius: 25px;
+    background-color: #d2691e;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: -5rem;
+    text-transform: uppercase;
   }
 
   .countrydata__state {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .country__data {
@@ -246,16 +261,16 @@ hr {
   .country__img {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .country__data .image {
-    width: 23rem;
+    width: 21rem;
     height: 16rem;
   }
 
   .country__data iframe {
-    width: 23rem;
+    width: 21rem;
     height: 16rem;
   }
 
@@ -264,7 +279,7 @@ hr {
   }
 
   .countrydata__state h1 {
-    font-size: 80%;
+    font-size: 0.7rem;
     line-height: 2;
     color: black;
   }
