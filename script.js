@@ -1,5 +1,3 @@
-// fecthAPI("nigeria");
-
 const input = document.querySelector("#input__form");
 const submit = document.querySelector(".btn");
 const parentEl = document.querySelector(".country__data__real");
